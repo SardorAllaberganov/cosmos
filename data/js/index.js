@@ -1,8 +1,8 @@
-consoleText(["Creative", "Perceptive", "Сommunicative"], "text", [
-  "#9711C6",
-  "#2538E0",
-  "#00CCF9"
-]);
+consoleText(["Creative", "Perceptive", "Сommunicative"], "text", ["#9711C6","#2538E0", "#00CCF9"]);
+
+/*
+  https://www.thebalancecareers.com/personal-skills-list-2063763
+*/
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ["#fff"];
