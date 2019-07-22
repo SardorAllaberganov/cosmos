@@ -23,7 +23,7 @@ html,body{
             transition: color 0.2s ease-out 0s;
             font-size: 14px;
             &:hover{
-                color: #5870EC  
+                color: #9711C6  
             }
         }
     }
@@ -59,6 +59,10 @@ header{
         .name{
             color: #5870EC;
             font-weight: 600;
+            text-shadow: -1px 3px 10px rgba(151, 17, 198, .5);
+            background: linear-gradient(45deg, #9711C6, #2538E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .hidden {
@@ -91,20 +95,61 @@ header{
         padding: 10px 40px;
         border-radius: 30px;
         border: 1px solid #5870EC;
-        background: #5870EC;
+        // background: #5870EC;
+        background: linear-gradient(45deg, #9711C6, #5870EC);
         color: #fff;
         box-shadow: 0 5px 10px #ccc;
         transition: all .2s;
         &:hover{
             position: absolute;
             transform: translateY(-5px);
+            background: linear-gradient(45deg, #9711C6, #5870EC);
         }
     }
 }
 #about{
     height: 100vh;
+    position: relative;
     .about-me-title{
-        margin: 50px auto;
-        color: #5870EC
+        padding-top: 100px;
+        color: #5870EC;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    .subtitle{
+        padding: 20px;
+        font-size: 1.3em;
+        text-shadow: 0 15px 20px #777;
+        color: #575757;
+        span{
+            color: #9711C6;
+            font-weight: bold;
+        }
+    }
+    .about-text{
+        font-size: 1.2em;
+        span{
+            position: relative;
+            font-style: italic;
+            color: #fff;
+            font-weight: 600;
+            display: inline-block;
+            word-break: break-word;
+            white-space: normal;
+            padding: 8px;
+            &::after{
+                background: linear-gradient(45deg, #9711C6,#5870EC);
+                content: "";
+                z-index: -1;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+                transform: rotate(2deg);
+            }
+        }
+
     }
 }
