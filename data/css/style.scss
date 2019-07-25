@@ -3,16 +3,14 @@
 html,body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 .navbar{
     z-index: 999;
-    box-shadow: 0 3px 10px #ccc;
-    background: #fff;
     .nav-item{
         margin: 0 10px;
         a.nav-link{
@@ -28,6 +26,10 @@ html,body{
             }
         }
     }
+}
+.nav-active{
+    box-shadow: 0 3px 10px #ccc;
+    background: rgba($color: #fff, $alpha: .95);
 }
 header{
     position: relative;
@@ -50,6 +52,7 @@ header{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 1s linear;
     h1{
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
@@ -96,6 +99,7 @@ header{
         text-decoration: none;
         padding: 10px 40px;
         border-radius: 30px;
+    
         border: 1px solid #5870EC;
         // background: #5870EC;
         background: linear-gradient(45deg, #9711C6, #5870EC);
@@ -125,33 +129,50 @@ header{
         text-shadow: 0 15px 20px #777;
         color: #575757;
         span{
-            color: #9711C6;
+            color: #5870EC;
             font-weight: bold;
+            text-shadow: -1px 3px 10px rgba(151, 17, 198, .5);
+            background: linear-gradient(45deg, #9711C6, #2538E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .about-text{
         font-size: 1.2em;
-        span{
-            position: relative;
-            font-style: italic;
-            color: #fff;
+        line-height: 35px;
+        span.important-info{
+            color: #5870EC;
             font-weight: 600;
-            display: inline-block;
-            word-break: break-word;
-            white-space: normal;
-            padding: 8px;
-            &::after{
-                background: linear-gradient(45deg, #9711C6,#5870EC);
-                content: "";
-                z-index: -1;
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                height: 100%;
-                width: 100%;
-                transform: rotate(2deg);
-            }
+            text-shadow: -1px 3px 10px rgba(151, 17, 198, .5);
+            background: linear-gradient(45deg, #9711C6, #2538E0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
+        span.bolder-text{
+            font-weight: 500;
+            font-style: italic;
+        }
+        // span{
+        //     height: 45px;
+        //     position: relative;
+        //     font-style: italic;
+        //     color: #fff;
+        //     font-weight: 600;
+        //     display: inline-block;
+        //     word-break: break-word;
+        //     white-space: normal;
+        //     padding: 8px;
+        //     &::after{
+        //         background: linear-gradient(45deg, #9711C6,#5870EC);
+        //         content: "";
+        //         z-index: -1;
+        //         position: absolute;
+        //         top: 0px;
+        //         left: 0px;
+        //         height: 100%;
+        //         width: 100%;
+        //         transform: rotate(-2deg);
+        //     }
+        // }
     }
 }

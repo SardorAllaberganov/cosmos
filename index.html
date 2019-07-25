@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Cosmos</title>
     <link rel="shortcut icon" href="data/img/title-logo.png">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="data/css/style.css">
+    <link rel="stylesheet" href="data/css/animate.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md  fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
-            <!-- Brand -->
             <a class="navbar-brand link-click" href="#header"><img src="data/img/logo1.png" width="130" alt="logo"></a>
-            
-            <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -46,7 +36,7 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="header-inner">
+                <div class="header-inner animated fadeInRight">
                     <h1>Hello <span role="img" aria-label="Cool hand emoji">✌🏼️</span>,
                         <br>
                         I'm <span class="name">Sardor</span>
@@ -60,7 +50,7 @@
                     </div>
                     <a class="about-me-btn link-click" href='#about'>About me</a>
                 </div>
-                <div id="header-bg"></div>
+                <div id="header-bg" class="animated fadeIn"></div>
             </div>
         </div>
     </header>
@@ -69,11 +59,15 @@
                 <h1 class="about-me-title text-center">About me</h1>
                 <p class="text-center subtitle mb-5">Really <b style="color: #9711C6"><i> cool way </i></b> to express yourself is <span><i> art.</i></span></p>
                 <p class="about-text text-center mt-5">
-                    I'm <span>Sardor</span> , a 23 years old <span>Front-end developer</span> and <span>Graphic designer</span>, from <span>Tashkent</span>.
+                    I'm <span class="important-info">Sardor</span> , a 23 years old <span class="important-info">Front-end developer</span> and <span class="important-info">Graphic designer</span>, from <span class="important-info">Tashkent</span>.
                 </p>
                 <p class="about-text text-center">
-                    After my collage graduation in "ICT engineering"
+                    1 year after  my collage graduation in <span class="bolder-text">"The service technician of ICT systems and IT"</span> , I have entered to the <span class="important-info">Inha University in Tashkent</span> to the faculty of <span class="bolder-text">"School of Computer science and Information Engineering".</span>
                 </p>
+                <p class="about-text text-center">
+                    I began to learn at University in Summer 2017 a HTML, CSS and Javascript. Day by day I am improving myself by learning a Front-end developing and I quickly love it. I watch tutorials from YouTube channels, read articles and I've tried examples from CodePen. 
+                </p>
+                <p class="about-text text-center">In September 2018 I decided it was time for a change, so I started to learn graphical design.</p>
             </div>
     </section>
     <section id="portfolio">
@@ -81,6 +75,9 @@
                 After all, work is the primary vehicle for most people to express themselves in the world.
         </h1>
     </section>
-    <script src="data/js/index.js"></script>
+    <script type="text/javascript" src="data/js/jquery.min.js"></script>
+    <script type="text/javascript" src="data/js/popper.min.js"></script>
+    <script type="text/javascript" src="data/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="data/js/index.js"></script>
 </body>
 </html>

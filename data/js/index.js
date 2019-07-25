@@ -1,8 +1,14 @@
-consoleText(["Creative", "Perceptive", "Сommunicative"], "text", ["#9711C6","#2538E0", "#00CCF9"]);
+  $(document).ready(function() { 
+  $(window).scroll(function() { 
+    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+      $(".navbar").addClass('nav-active');
+    } else {
+        $(".navbar").removeClass('nav-active');
+    }
+  }); 
+}); 
 
-/*
-  https://www.thebalancecareers.com/personal-skills-list-2063763
-*/
+consoleText(["Creative", "Perceptive", "Сommunicative"], "text", ["#9711C6","#2538E0", "#00CCF9"]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ["#fff"];
@@ -49,8 +55,7 @@ function consoleText(words, id, colors) {
       visible = true;
     }
   }, 400);
-}
-
+};
 
 
 // $('header').mousemove(function(event){
@@ -59,3 +64,7 @@ function consoleText(words, id, colors) {
 //   $('#header-bg').css('margin-left', moveX + 'px');
 //   $('#header-bg').css('margin-top', -moveY + 'px');
 // });
+
+
+
+
