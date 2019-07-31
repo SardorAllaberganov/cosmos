@@ -20,13 +20,13 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item bounceInUp animated delay-01">
                     <a class="nav-link link-click" href="#about">About me</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link-click" href="#">Portfolio</a>
+                <li class="nav-item bounceInUp animated delay-03">
+                    <a class="nav-link link-click" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item bounceInUp animated delay-06">
                     <a class="nav-link link-click" href="#">Contacts</a>
                 </li> 
                 </ul>
@@ -36,19 +36,21 @@
     <header id="header">
         <div class="container">
             <div class="row">
-                <div class="header-inner animated fadeInRight">
-                    <h1>Hello <span role="img" aria-label="Cool hand emoji">✌🏼️</span>,
+                <div class="header-inner">
+                    <h1 class="animated fadeInRight"> Hello <span role="img" aria-label="Cool hand emoji">✌🏼️</span>,
                         <br>
                         I'm <span class="name">Sardor</span>
                     </h1>
-                    <div class="console-container">A
-                        <span id="text"></span>
-                        <div class="console-underscore" id="console">&#95;</div>
+                    <div class="fadeInUp animated">
+                        <div class="console-container">A
+                            <span id="text"></span>
+                            <div class="console-underscore" id="console">&#95;</div>
+                        </div>
+                        <div class="text">
+                            Front-end Dev and Graphic Designer  
+                        </div>
                     </div>
-                    <div class="text">
-                        Front-end Dev and Graphic Designer  
-                    </div>
-                    <a class="about-me-btn link-click" href='#about'>About me</a>
+                    <a class="about-me-btn link-click fadeIn animated" href='#about'>About me</a>
                 </div>
                 <div id="header-bg" class="animated fadeIn"></div>
             </div>
@@ -56,24 +58,35 @@
     </header>
     <section id="about">
         <div class="container">
-                <h1 class="about-me-title text-center">About me</h1>
-                <p class="text-center subtitle mb-5">Really <b style="color: #9711C6"><i> cool way </i></b> to express yourself is <span><i> art.</i></span></p>
-                <p class="about-text text-center mt-5">
-                    I'm <span class="important-info">Sardor</span> , a 23 years old <span class="important-info">Front-end developer</span> and <span class="important-info">Graphic designer</span>, from <span class="important-info">Tashkent</span>.
-                </p>
-                <p class="about-text text-center">
-                    1 year after  my collage graduation in <span class="bolder-text">"The service technician of ICT systems and IT"</span> , I have entered to the <span class="important-info">Inha University in Tashkent</span> to the faculty of <span class="bolder-text">"School of Computer science and Information Engineering".</span>
-                </p>
-                <p class="about-text text-center">
-                    I began to learn at University in Summer 2017 a HTML, CSS and Javascript. Day by day I am improving myself by learning a Front-end developing and I quickly love it. I watch tutorials from YouTube channels, read articles and I've tried examples from CodePen. 
-                </p>
-                <p class="about-text text-center">In September 2018 I decided it was time for a change, so I started to learn graphical design.</p>
-            </div>
+            <h1 class="about-me-title text-center">About me</h1>
+            <p class="text-center subtitle mb-5">Really <b style="color: #9711C6"><i> cool way </i></b> to express yourself is <span><i> art.</i></span></p>
+            <p class="about-text text-center mt-5">
+                I'm <span class="important-info">Sardor</span> , a 23 years old <span class="important-info">Front-end developer</span> and <span class="important-info">Graphic designer</span>, from <span class="important-info">Tashkent</span>.
+            </p>
+            <p class="about-text text-center">
+                1 year after  my collage graduation in <span class="bolder-text">"The service technician of ICT systems and IT"</span> , I have entered to the <span class="important-info">Inha University in Tashkent</span> to the faculty of <span class="bolder-text">"School of Computer science and Information Engineering".</span>
+            </p>
+            <p class="about-text text-center">
+                I began to learn at University in Summer 2017 a HTML, CSS and Javascript. Day by day I am improving myself by learning a Front-end developing and I quickly love it. I watch tutorials from YouTube channels, read articles and I've tried examples from CodePen. 
+            </p>
+            <p class="about-text text-center">In September 2018 I decided it was time for a change, so I started to learn graphical design.</p>
+            <p class="about-text text-center">I tried out different logos to do and Web designs for websites.</p>
+            <p class="about-text text-center mb-4">Nowadays I am working in both of spheres, as a <span class="important-info">graphic designer</span> and <span class="important-info">front-end developer</span></p>
+            <h4 class="about-text text-center my-5">My current stack of <span class="important-info">languages/technologies</span> and <span class="important-info">web design instruments</span> is:</h4>
+            <h6 class="stuck-techs text-center">HTML5 - CSS3 - JAVASCRIPT - JQUERY - SASS - ANGULARJS - VUE.JS - LARAVEL - MYSQL <br> ADOBE ILLUSTRATOR - ADOBE PHOTOSHOP - ADOBE XD - FIGMA</h6>
+            <a href="data/Resume.pdf" target="_blank" class="resume_btn"> <img src="data/img/telegram.svg" alt=""> Resume</a>
+        </div>
     </section>
     <section id="portfolio">
-        <h1>
-                After all, work is the primary vehicle for most people to express themselves in the world.
-        </h1>
+        <div class="container">
+            <h1 class="text-center my-3">Portfolio</h1>
+            <h5 class="text-center">
+                After all, work is the primary vehicle for most people <br> to express themselves in the world.
+            </h5>
+            <div class="row">
+
+            </div>
+        </div>
     </section>
     <script type="text/javascript" src="data/js/jquery.min.js"></script>
     <script type="text/javascript" src="data/js/popper.min.js"></script>

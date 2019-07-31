@@ -136,13 +136,14 @@ header #header-bg {
 }
 
 #about {
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 150px;
   position: relative;
 }
 
 #about .about-me-title {
   padding-top: 100px;
-  color: #5870EC;
+  color: #9711C6;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
@@ -165,8 +166,8 @@ header #header-bg {
 }
 
 #about .about-text {
-  font-size: 1.2em;
-  line-height: 35px;
+  font-size: 1.1em;
+  line-height: 30px;
 }
 
 #about .about-text span.important-info {
@@ -181,5 +182,61 @@ header #header-bg {
 #about .about-text span.bolder-text {
   font-weight: 500;
   font-style: italic;
+}
+
+#about h4 {
+  color: #444;
+  font-weight: 600;
+  font-size: 1.4em !important;
+}
+
+#about .stuck-techs {
+  font-weight: 700;
+  font-size: 1em;
+  color: #9711C6;
+  line-height: 30px;
+}
+
+#about .resume_btn {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  background: linear-gradient(45deg, #9711C6, #2538E0);
+  margin-top: 50px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-box-shadow: 0 3px 10px #999;
+          box-shadow: 0 3px 10px #999;
+}
+
+#about .resume_btn img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#about .resume_btn:hover {
+  margin-top: 40px;
+}
+
+#portfolio {
+  padding: 100px 0;
+}
+
+#portfolio h1 {
+  color: #9711C6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+#portfolio h5 {
+  line-height: 30px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

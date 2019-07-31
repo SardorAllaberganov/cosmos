@@ -8,7 +8,7 @@
   }); 
 }); 
 
-consoleText(["Creative", "Perceptive", "Сommunicative"], "text", ["#9711C6","#2538E0", "#00CCF9"]);
+consoleText(["Creative", "Super Curious", "Сommunicative"], "text", ["#9711C6","#2538E0", "#00CCF9"]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ["#fff"];
