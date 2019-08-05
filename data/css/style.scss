@@ -26,6 +26,14 @@ html,body{
             }
         }
     }
+    .toggle-nav{
+        height: 30px;
+        width: 30px;
+        background: url(../img/bars-solid.svg) no-repeat;
+        border: none;
+        background-size: 20px;
+        outline: none;
+    }
 }
 .nav-active{
     box-shadow: 0 3px 10px #ccc;
@@ -49,6 +57,7 @@ header{
     }
 }
 .header-inner{
+    padding: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -157,7 +166,7 @@ header{
     h4{
         color: #444;
         font-weight: 600;
-        font-size: 1.4em!important;
+        font-size: 1.4em;
     }
     .stuck-techs{
         font-weight: 700;
@@ -264,5 +273,81 @@ header{
         //     height: 50px;
         //     width: 50px;
         // }
+    }
+}
+
+.navbar-toggler{
+    color: #000;
+}
+@media only screen and (max-width: 992px){
+    .header-inner{
+        h1{
+            font-size: 2em;
+        }
+        .console-container,.text{
+            font-size: 1.2em;
+        }
+        .about-me-btn{
+            font-size: .8em;
+            padding: 8px 25px;
+        }
+    }
+    .header-inner .about-me-btn{
+        margin: 2em 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header-inner{
+        h1{
+            font-size: 2.5em;
+        }
+        .console-container,.text{
+            font-size: 1.5em;
+        }
+        .about-me-btn{
+            font-size: .8em;
+            padding: 8px 25px;
+        }
+    }
+    header #header-bg{
+        background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/header-img2.svg) no-repeat;
+    }
+    #about .about-me-title,#portfolio h1,#contacts h1{
+        font-size: 1.3em;
+    }
+    #about .subtitle{
+        margin: 0 0 10px!important;
+        font-size: 1em;
+    }
+    #about .about-text{
+        font-size: .9em;
+    }
+    #about .starting-about{
+        margin: 10px 0 0!important;
+    }
+    #about .stuck-techs{
+        font-size: .8em;
+    }
+    #about .resume_btn{
+        padding: 8px 25px;
+        font-size: .7em;
+        img{
+            width: 15px;
+        }
+    }
+    #portfolio h5,#contacts h5{
+        font-size: .9em;
+    }
+    #contacts .social_bar li{
+        margin: 0 5px;
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+    .bottom-logo{
+        width: 140px;
+    }
+    #contacts h6{
+        font-size: .7em;
     }
 }
