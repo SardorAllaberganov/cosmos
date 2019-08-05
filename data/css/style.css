@@ -239,4 +239,75 @@ header #header-bg {
   line-height: 30px;
   font-weight: 400;
 }
+
+#contacts h1 {
+  color: #9711C6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+#contacts h5 {
+  font-weight: 500;
+  color: #777;
+}
+
+#contacts h5 b {
+  color: #444;
+}
+
+#contacts h5 a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#contacts h5 a:hover {
+  color: #9711C6;
+}
+
+#contacts .email_address {
+  margin: 80px 0 50px;
+  font-weight: 600;
+}
+
+#contacts .social_bar {
+  list-style: none;
+  margin: 0 0 70px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+#contacts .social_bar li {
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #9711C6;
+  width: 50px;
+  height: 50px;
+  padding: 11px 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#contacts .social_bar li a svg {
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+  width: 25px;
+  height: 25px;
+  fill: #9711C6;
+}
+
+#contacts .social_bar li:hover {
+  background: #9711C6;
+  border-color: #9711C6;
+}
+
+#contacts .social_bar li:hover svg {
+  fill: #fff;
+  -webkit-transition: fill .2s;
+  transition: fill .2s;
+}
 /*# sourceMappingURL=style.css.map */

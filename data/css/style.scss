@@ -201,3 +201,68 @@ header{
         font-weight: 400;
     }
 }
+
+#contacts{
+    h1{
+        color: #9711C6;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    h5{
+        font-weight: 500;
+        color: #777;
+        b{
+            color: #444;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+            transition: all .2s;
+            &:hover{
+                color: #9711C6;
+            }
+        }
+    }
+    .email_address{
+        margin: 80px 0 50px;
+        font-weight: 600;
+    }
+    .social_bar{
+        list-style: none;
+        margin: 0 0 70px;
+        text-align: center;
+        padding: 0;
+        position: relative;
+        li{
+            margin: 0 10px;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid #9711C6;
+            width: 50px;
+            height: 50px;
+            padding: 11px 10px;
+            transition: all .2s;
+            a{
+                svg{
+                    transition: fill .2s;
+                    width: 25px;
+                    height: 25px;
+                    fill: #9711C6;
+                }
+            }
+            &:hover{
+                background: #9711C6;
+                border-color: #9711C6;
+            }
+            &:hover svg{
+                fill: #fff;
+                transition: fill .2s;
+            }
+        }
+        // li{
+        //     height: 50px;
+        //     width: 50px;
+        // }
+    }
+}
